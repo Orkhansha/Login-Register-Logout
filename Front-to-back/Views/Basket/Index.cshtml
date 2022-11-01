@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Basket";
+}
+
+
+
+<main>
+    <section id="header2">
+        <div class="row head-img">
+            <h1>Here’s What’s In Your Bag.</h1>
+            <span>Share Your Feedback With Us</span>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row my-5">
+            <h1 style="text-align: center;">Basket products</h1>
+            <table class="table my-3">
+                <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Cost</th>
+                        <th scope="col">Count</th>
+                        <th scope="col">TotalPrice</th>
+                        <th scope="col">Trash</th>
+
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                </tbody>
+            </table>
+            <div class="Total-area">
+                <p>Subtotal: <span id="subtotal"></span>$</p>
+                <p>Shipping: <span id="ship-cost">3.37</span>$</p>
+                <p>Tax(GST): <span id="ship-cost-second">11.37</span>$</p>
+                <hr>
+                <p>Total: <span id="totalprice"></span>$</p>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+
+@section Scripts {
+    <link rel="stylesheet" href="~/assets/css/basket/basket.css">
+}
